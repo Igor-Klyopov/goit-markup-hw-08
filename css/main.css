@@ -981,6 +981,30 @@ img {
   }
 }
 
+.header__contacts-mail .header__contacts-icon {
+  width: 14px;
+  height: 10px;
+}
+
+@media (min-width: 1200px) {
+  .header__contacts-mail .header__contacts-icon {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.header__contacts-tel .header__contacts-icon {
+  width: 10px;
+  height: 14px;
+}
+
+@media (min-width: 1200px) {
+  .header__contacts-tel .header__contacts-icon {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .header__contacts-mail {
   margin-bottom: 10px;
   font-size: 24px;
