@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  
   <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -15,59 +13,57 @@
     />
     <title>Web Studio</title>
     <link rel="stylesheet" href="./css/main.min.css" />
-
   </head>
 
   <body>
-  
     <header class="header">
-
       <div class="container">
-
         <a class="link logo" href="./index.html">
           Web<span class="logo__contrast-part">Studio</span>
         </a>
-        
+
         <div class="menu-container" id="menu-container" data-menu>
-
           <nav class="main-menu">
+            <ul class="list main-menu__list">
+              <li class="main-menu__item">
+                <a class="link title active-link" href="index.html">Студия</a>
+              </li>
 
-          <ul class="list main-menu__list">
-            <li class="main-menu__item">
-              <a class="link title active-link" href="index.html">Студия</a>
-            </li>
+              <li class="main-menu__item">
+                <a class="link title" href="./portfolio.html">Портфолио</a>
+              </li>
 
-            <li class="main-menu__item">
-              <a class="link title" href="./portfolio.html">Портфолио</a>
-            </li>
-
-            <li class="main-menu__item">
-              <a class="link title" href="#">Контакты</a>
-            </li>
-          </ul>
-
+              <li class="main-menu__item">
+                <a class="link title" href="#">Контакты</a>
+              </li>
+            </ul>
           </nav>
 
-           <ul class="list header__contacts-list"> 
+          <ul class="list header__contacts-list">
             <li class="header__contacts-item">
-              <a class="link header__contacts-mail" href="mailto:info@devstudio.com">
+              <a
+                class="link header__contacts-mail"
+                href="mailto:info@devstudio.com"
+              >
                 <svg class="header__contacts-icon">
-                  <use href="./images/icons/icons-sprite.svg#icon-envelope"></use>
+                  <use
+                    href="./images/icons/icons-sprite.svg#icon-envelope"
+                  ></use>
                 </svg>
-              info@devstudio.com
-            </a>
-          </li>
+                info@devstudio.com
+              </a>
+            </li>
 
-          <li class="header__contacts-item">
-            <a class="link header__contacts-tel" href="tel:+380961111111">
-              <svg class="header__contacts-icon">
-                <use
-                  href="./images/icons/icons-sprite.svg#icon-smartphone"
-                ></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
+            <li class="header__contacts-item">
+              <a class="link header__contacts-tel" href="tel:+380961111111">
+                <svg class="header__contacts-icon">
+                  <use
+                    href="./images/icons/icons-sprite.svg#icon-smartphone"
+                  ></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
           </ul>
 
           <ul class="list header__social-list">
@@ -84,29 +80,30 @@
               <a class="link" href="#">LinkedIn</a>
             </li>
           </ul>
-          
         </div>
 
-
-        <button class="main-menu__button" 
-            type="button" 
-            aria-expanded="false" 
-            aria-controls="menu-container"
-            data-menu-button>
-
-            <svg class="" width="24" height="16">
-              <use class="main-menu__icon-burger" href="./images/icons/icons-sprite.svg#icon-menu-burger"></use>
-              <use class="main-menu__icon-cross" href="./images/icons/icons-sprite.svg#icon-menu-cross"></use>
-            </svg>
-
+        <button
+          class="main-menu__button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg class="" width="24" height="16">
+            <use
+              class="main-menu__icon-burger"
+              href="./images/icons/icons-sprite.svg#icon-menu-burger"
+            ></use>
+            <use
+              class="main-menu__icon-cross"
+              href="./images/icons/icons-sprite.svg#icon-menu-cross"
+            ></use>
+          </svg>
         </button>
-
       </div>
-
     </header>
 
     <main>
-
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -190,13 +187,17 @@
             <li class="competence__item">
               <div class="img-wrap">
                 <picture>
-                  <source srcset="./images/home-page/desktop-applications.jpg 1x, 
-                  ./images/home-page/desktop-applications@2x.jpg 2x" 
-                  media="(min-width: 1200px)">
+                  <source
+                    srcset="
+                      ./images/home-page/desktop-applications.jpg    1x,
+                      ./images/home-page/desktop-applications@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
                   <img
-                  src="./images/home-page/desktop-applications.jpg"
-                  alt="Десктопные приложения"
-                />
+                    src="./images/home-page/desktop-applications.jpg"
+                    alt="Десктопные приложения"
+                  />
                 </picture>
                 <p class="paragraph competence__kind">Десктопные приложения</p>
               </div>
@@ -205,13 +206,17 @@
             <li class="competence__item">
               <div class="img-wrap">
                 <picture>
-                  <source srcset="./images/home-page/mobile-applications.jpg 1x, 
-                  ./images/home-page/mobile-applications@2x.jpg 2x" 
-                  media="(min-width: 1200px)">
+                  <source
+                    srcset="
+                      ./images/home-page/mobile-applications.jpg    1x,
+                      ./images/home-page/mobile-applications@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
                   <img
-                  src="./images/home-page/mobile-applications.jpg"
-                  alt="Мобильные приложения"
-                />
+                    src="./images/home-page/mobile-applications.jpg"
+                    alt="Мобильные приложения"
+                  />
                 </picture>
                 <p class="paragraph competence__kind">Мобильные приложения</p>
               </div>
@@ -220,13 +225,17 @@
             <li class="competence__item">
               <div class="img-wrap">
                 <picture>
-                  <source srcset="./images/home-page/design-solutions.jpg 1x, 
-                  ./images/home-page/design-solutions@2x.jpg 2x" 
-                  media="(min-width: 1200px)">
+                  <source
+                    srcset="
+                      ./images/home-page/design-solutions.jpg    1x,
+                      ./images/home-page/design-solutions@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
                   <img
-                  src="./images/home-page/design-solutions.jpg"
-                  alt="Дизайнерские решения"
-                />
+                    src="./images/home-page/design-solutions.jpg"
+                    alt="Дизайнерские решения"
+                  />
                 </picture>
                 <p class="paragraph competence__kind">Дизайнерские решения</p>
               </div>
@@ -242,31 +251,58 @@
           <ul class="list card-set-container">
             <li class="team__member">
               <picture>
-                <source srcset="./images/home-page/photo-igor-demyanenko-desktop.webp 1x, 
-                ./images/home-page/photo-igor-demyanenko-desktop@2x.webp 2x" 
-                type="image/webp" media="(min-width: 1200px)">
-                <source srcset="./images/home-page/photo-igor-demyanenko-desktop.jpg 1x, 
-                /images/home-page/photo-igor-demyanenko-desktop@2x.jpg 2x" 
-                media="(min-width: 1200px)">
+                <source
+                  srcset="
+                    ./images/home-page/photo-igor-demyanenko-desktop.webp    1x,
+                    ./images/home-page/photo-igor-demyanenko-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/home-page/photo-igor-demyanenko-desktop.jpg   1x,
+                    /images/home-page/photo-igor-demyanenko-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
-                <source srcset="./images/home-page/photo-igor-demyanenko-tablet.webp 1x, 
-                ./images/home-page/photo-igor-demyanenko-tablet@2x.webp 2x" 
-                type="image/webp" media="(min-width: 768px)">
-                <source srcset="./images/home-page/photo-igor-demyanenko-tablet.jpg 1x, 
-                ./images/home-page/photo-igor-demyanenko-tablet@2x.jpg 2x" 
-                media="(min-width: 768px)">
+                <source
+                  srcset="
+                    ./images/home-page/photo-igor-demyanenko-tablet.webp    1x,
+                    ./images/home-page/photo-igor-demyanenko-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/home-page/photo-igor-demyanenko-tablet.jpg    1x,
+                    ./images/home-page/photo-igor-demyanenko-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
-                <source srcset="./images/home-page/photo-igor-demyanenko-mobile.webp 1x, 
-                ./images/home-page/photo-igor-demyanenko-mobile@2x.webp 2x" 
-                type="image/webp" media="(max-width: 480px), (min-width: 480px)">
-                <source srcset="./images/home-page/photo-igor-demyanenko-mobile.jpg 1x, 
-                ./images/home-page/photo-igor-demyanenko-mobile@2x.jpg 2x" 
-                media="(max-width: 480px), (min-width: 480px)">
+                <source
+                  srcset="
+                    ./images/home-page/photo-igor-demyanenko-mobile.webp    1x,
+                    ./images/home-page/photo-igor-demyanenko-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 480px), (min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/home-page/photo-igor-demyanenko-mobile.jpg    1x,
+                    ./images/home-page/photo-igor-demyanenko-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 480px), (min-width: 480px)"
+                />
                 <img
-                class="team__member-image"
-                src="./images/home-page/photo-igor-demyanenko-desktop.jpg"
-                alt="фото Игоря Демьяненко"
-              />
+                  class="team__member-image"
+                  src="./images/home-page/photo-igor-demyanenko-desktop.jpg"
+                  alt="фото Игоря Демьяненко"
+                />
               </picture>
               <p class="title team__member-name">Игорь Демьяненко</p>
               <p class="paragraph" lang="en">Product Designer</p>
@@ -336,25 +372,54 @@
 
             <li class="team__member">
               <picture>
-                <source srcset="./images/home-page/photo-olga-repina-desktop.webp 1x, 
-                ./images/home-page/photo-olga-repina-desktop@2x.webp 2x" 
-                type="image/webp" media="(min-width: 1200px)">
-                <source srcset="./images/home-page/photo-olga-repina-desktop.jpg 1x, /images/home-page/photo-olga-repina-desktop@2x.jpg 2x" 
-                media="(min-width: 1200px)">
+                <source
+                  srcset="
+                    ./images/home-page/photo-olga-repina-desktop.webp    1x,
+                    ./images/home-page/photo-olga-repina-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/home-page/photo-olga-repina-desktop.jpg   1x,
+                    /images/home-page/photo-olga-repina-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
-                <source srcset="./images/home-page/photo-olga-repina-tablet.webp 1x, 
-                ./images/home-page/photo-olga-repina-tablet@2x.webp 2x" 
-                type="image/webp" media="(min-width: 768px)">
-                <source srcset="./images/home-page/photo-olga-repina-tablet.jpg 1x, ./images/home-page/photo-olga-repina-tablet@2x.jpg 2x" 
-                media="(min-width: 768px)">
+                <source
+                  srcset="
+                    ./images/home-page/photo-olga-repina-tablet.webp    1x,
+                    ./images/home-page/photo-olga-repina-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/home-page/photo-olga-repina-tablet.jpg    1x,
+                    ./images/home-page/photo-olga-repina-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
-                <source srcset="./images/home-page/photo-olga-repina-mobile.webp 1x, 
-                ./images/home-page/photo-olga-repina-mobile@2x.webp 2x" 
-                type="image/webp" media="(max-width: 480px), (min-width: 480px)">
-                <source srcset="./images/home-page/photo-olga-repina-mobile.jpg 1x, 
-                ./images/home-page/photo-olga-repina-mobile@2x.jpg 2x" 
-                media="(max-width: 480px), (min-width: 480px)">
-                  <img
+                <source
+                  srcset="
+                    ./images/home-page/photo-olga-repina-mobile.webp    1x,
+                    ./images/home-page/photo-olga-repina-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 480px), (min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/home-page/photo-olga-repina-mobile.jpg    1x,
+                    ./images/home-page/photo-olga-repina-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 480px), (min-width: 480px)"
+                />
+                <img
                   class="team__member-image"
                   src="./images/home-page/photo-olga-repina-desktop.jpg"
                   alt="фото Ольги Репиной"
@@ -428,19 +493,58 @@
 
             <li class="team__member">
               <picture>
-                <source srcset="./images/home-page/photo-nikolay-tarasov-desktop.webp 1x, ./images/home-page/photo-nikolay-tarasov-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                <source srcset="./images/home-page/photo-nikolay-tarasov-desktop.jpg 1x, /images/home-page/photo-nikolay-tarasov-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source
+                  srcset="
+                    ./images/home-page/photo-nikolay-tarasov-desktop.webp    1x,
+                    ./images/home-page/photo-nikolay-tarasov-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/home-page/photo-nikolay-tarasov-desktop.jpg   1x,
+                    /images/home-page/photo-nikolay-tarasov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
-                <source srcset="./images/home-page/photo-nikolay-tarasov-tablet.webp 1x, ./images/home-page/photo-nikolay-tarasov-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-                <source srcset="./images/home-page/photo-nikolay-tarasov-tablet.jpg 1x, ./images/home-page/photo-nikolay-tarasov-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source
+                  srcset="
+                    ./images/home-page/photo-nikolay-tarasov-tablet.webp    1x,
+                    ./images/home-page/photo-nikolay-tarasov-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/home-page/photo-nikolay-tarasov-tablet.jpg    1x,
+                    ./images/home-page/photo-nikolay-tarasov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
-                <source srcset="./images/home-page/photo-nikolay-tarasov-mobile.webp 1x, ./images/home-page/photo-nikolay-tarasov-mobile@2x.webp 2x" type="image/webp" media="(max-width: 480px), (min-width: 480px)">
-                <source srcset="./images/home-page/photo-nikolay-tarasov-mobile.jpg 1x, ./images/home-page/photo-nikolay-tarasov-mobile@2x.jpg 2x" media="(max-width: 480px), (min-width: 480px)">
-                  <img
-                class="team__member-image"
-                src="./images/home-page/photo-nikolay-tarasov-desctop.jpg"
-                alt="фото Николая Тарасова"
-              />
+                <source
+                  srcset="
+                    ./images/home-page/photo-nikolay-tarasov-mobile.webp    1x,
+                    ./images/home-page/photo-nikolay-tarasov-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 480px), (min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/home-page/photo-nikolay-tarasov-mobile.jpg    1x,
+                    ./images/home-page/photo-nikolay-tarasov-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 480px), (min-width: 480px)"
+                />
+                <img
+                  class="team__member-image"
+                  src="./images/home-page/photo-nikolay-tarasov-desctop.jpg"
+                  alt="фото Николая Тарасова"
+                />
               </picture>
               <p class="title team__member-name">Николай Тарасов</p>
               <p class="paragraph" lang="en">Marketing</p>
@@ -510,27 +614,54 @@
 
             <li class="team__member">
               <picture>
-                <source srcset="./images/home-page/photo-mikhail-ermakov-desktop.webp 1x, 
-                ./images/home-page/photo-mikhail-ermakov-desktop@2x.webp 2x" 
-                type="image/webp" media="(min-width: 1200px)">
-                <source srcset="./images/home-page/photo-mikhail-ermakov-desktop.jpg 1x, 
-                /images/home-page/photo-mikhail-ermakov-desktop@2x.jpg 2x" 
-                media="(min-width: 1200px)">
+                <source
+                  srcset="
+                    ./images/home-page/photo-mikhail-ermakov-desktop.webp    1x,
+                    ./images/home-page/photo-mikhail-ermakov-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/home-page/photo-mikhail-ermakov-desktop.jpg   1x,
+                    /images/home-page/photo-mikhail-ermakov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
-                <source srcset="./images/home-page/photo-mikhail-ermakov-tablet.webp 1x, 
-                ./images/home-page/photo-mikhail-ermakov-tablet@2x.webp 2x" 
-                type="image/webp" media="(min-width: 768px)">
-                <source srcset="./images/home-page/photo-mikhail-ermakov-tablet.jpg 1x, 
-                ./images/home-page/photo-mikhail-ermakov-tablet@2x.jpg 2x" 
-                media="(min-width: 768px)">
+                <source
+                  srcset="
+                    ./images/home-page/photo-mikhail-ermakov-tablet.webp    1x,
+                    ./images/home-page/photo-mikhail-ermakov-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/home-page/photo-mikhail-ermakov-tablet.jpg    1x,
+                    ./images/home-page/photo-mikhail-ermakov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
-                <source srcset="./images/home-page/photo-mikhail-ermakov-mobile.webp 1x, 
-                ./images/home-page/photo-mikhail-ermakov-mobile@2x.webp 2x" 
-                type="image/webp" media="(max-width: 480px), (min-width: 480px)">
-                <source srcset="./images/home-page/photo-mikhail-ermakov-mobile.jpg 1x, 
-                ./images/home-page/photo-mikhail-ermakov-mobile@2x.jpg 2x" 
-                media="(max-width: 480px), (min-width: 480px)">
-                  <img
+                <source
+                  srcset="
+                    ./images/home-page/photo-mikhail-ermakov-mobile.webp    1x,
+                    ./images/home-page/photo-mikhail-ermakov-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 480px), (min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/home-page/photo-mikhail-ermakov-mobile.jpg    1x,
+                    ./images/home-page/photo-mikhail-ermakov-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 480px), (min-width: 480px)"
+                />
+                <img
                   class="team__member-image"
                   src="./images/home-page/photo-mikhail-ermakov-desktop.jpg"
                   alt="фото Михаила Ермакова"
@@ -675,39 +806,44 @@
     </main>
 
     <footer class="footer">
-
       <div class="container">
-
         <div class="footer__contacts-wrap">
-
           <a class="link logo" href="./index.html">
             Web<span class="logo__contrast-part">Studio</span>
           </a>
 
           <address class="footer__contacts-list">
-
-            <a class="link footer__contacts-item" href="https://goo.gl/maps/bXQtMFkbKmihJTuy8" target="_blank" rel="noopener noreferrer">
+            <a
+              class="link footer__contacts-item"
+              href="https://goo.gl/maps/bXQtMFkbKmihJTuy8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               г. Киев, пр-т Леси Украинки, 26
             </a>
-            <a class="link footer__contacts-item" href="mailto:info@devstudio.com">
+            <a
+              class="link footer__contacts-item"
+              href="mailto:info@devstudio.com"
+            >
               info@devstudio.com
             </a>
             <a class="link footer__contacts-item" href="tel:+380961111111">
               +38 096 111 11 11
             </a>
-
           </address>
-
         </div>
 
         <div class="footer__social-wrap">
-
           <p class="paragraph footer__appeal">Присоединяйтесь</p>
 
           <ul class="list social-networks footer-social">
-
             <li class="social-networks__item">
-              <a class="link social-networks__link" href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                class="link social-networks__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg width="20" height="20">
                   <use
                     href="./images/icons/icons-sprite.svg#icon-instagram"
@@ -717,7 +853,12 @@
             </li>
 
             <li class="social-networks__item">
-              <a class="link social-networks__link" href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                class="link social-networks__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg width="20" height="20">
                   <use
                     href="./images/icons/icons-sprite.svg#icon-twitter"
@@ -727,7 +868,12 @@
             </li>
 
             <li class="social-networks__item">
-              <a class="link social-networks__link" href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                class="link social-networks__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg width="20" height="20">
                   <use
                     href="./images/icons/icons-sprite.svg#icon-facebook"
@@ -737,7 +883,12 @@
             </li>
 
             <li class="social-networks__item">
-              <a class="link social-networks__link" href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                class="link social-networks__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg width="20" height="20">
                   <use
                     href="./images/icons/icons-sprite.svg#icon-linkedin"
@@ -745,20 +896,23 @@
                 </svg>
               </a>
             </li>
-
           </ul>
-
         </div>
 
         <div class="footer__subscribe-form-wrap">
-
           <p class="paragraph footer__appeal">Подпишитесь на рассылку</p>
 
           <form class="footer__subscribe-form">
             <label class="visually-hidden" for="footer-form-mail"
               >Адрес электронной почты</label
             >
-            <input id="footer-form-mail" name="footer-form-mail" type="email" placeholder="E-mail" required/>
+            <input
+              id="footer-form-mail"
+              name="footer-form-mail"
+              type="email"
+              placeholder="E-mail"
+              required
+            />
 
             <button class="button basic-button subscribe-button" type="submit">
               Подписаться
@@ -768,13 +922,9 @@
                 ></use>
               </svg>
             </button>
-
           </form>
-
         </div>
-
       </div>
-
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -850,7 +1000,11 @@
             />
 
             <span class="feedback-form__checkbox-box">
-              <svg class="feedback-form__icon-check-mark" width="16" height="15">
+              <svg
+                class="feedback-form__icon-check-mark"
+                width="16"
+                height="15"
+              >
                 <use
                   href="./images/icons/icons-sprite.svg#icon-check-mark"
                 ></use>
@@ -858,7 +1012,9 @@
             </span>
 
             <span>Соглашаюсь с рассылкой и принимаю</span>
-            <a class="feedback-form__agreement-link" href="#">Условия договора</a>
+            <a class="feedback-form__agreement-link" href="#"
+              >Условия договора</a
+            >
           </label>
 
           <button
@@ -867,15 +1023,11 @@
           >
             Отправить
           </button>
-
         </form>
-
       </div>
-
     </div>
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    
   </body>
 </html>

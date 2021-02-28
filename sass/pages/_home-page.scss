@@ -1,15 +1,15 @@
 .feature__item {
-@include adaptive-before-tablet {
-  @include card-number-in-line(1);
-}
+  @include adaptive-before-tablet {
+    @include card-number-in-line(1);
+  }
 
-@include adaptive-for-tablet {
-  @include card-number-in-line(2);
-}
+  @include adaptive-for-tablet {
+    @include card-number-in-line(2);
+  }
 
-@include adaptive-for-desktop {
-  @include card-number-in-line(4);
-}
+  @include adaptive-for-desktop {
+    @include card-number-in-line(4);
+  }
 }
 
 .feature__icon-wrap {
@@ -69,15 +69,15 @@
 
   @include adaptive-before-tablet {
     @include card-number-in-line(1);
- }
- 
+  }
+
   @include adaptive-for-tablet {
     @include card-number-in-line(2);
- }
- 
+  }
+
   @include adaptive-for-desktop {
     @include card-number-in-line(4);
- }
+  }
 }
 
 .team__member-image {
@@ -105,15 +105,14 @@
   height: 90px;
 
   @include card-number-in-line(2);
-  
+
   @include adaptive-for-tablet {
     @include card-number-in-line(3);
- }
+  }
 
- @include adaptive-for-desktop {
+  @include adaptive-for-desktop {
     @include card-number-in-line(6);
- }
-  
+  }
 }
 
 .clients__link {

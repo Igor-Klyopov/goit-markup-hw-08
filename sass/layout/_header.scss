@@ -20,7 +20,7 @@
   &.is-open {
     display: block;
     z-index: 1;
-    
+
     @include adaptive-for-tablet {
       display: flex;
     }
@@ -33,15 +33,15 @@
     left: 0;
     display: none;
     padding: 48px 40px;
- }
+  }
 
- @include adaptive-for-tablet {
-  position: static;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  padding: 0;
+  @include adaptive-for-tablet {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0;
   }
 }
 
@@ -79,7 +79,7 @@
   @include adaptive-for-tablet {
     display: block;
     padding-top: 32px;
-    
+
     &::after {
       display: block;
       width: 100%;
@@ -87,15 +87,15 @@
       margin-top: 28px;
       background-color: var(--accent-color);
       border-radius: 2px;
-      content: "";
+      content: '';
       transform: scaleX(0);
       transition: var(--basic-transform-animation);
     }
-  
+
     &:focus::after,
     &:hover::after {
       transform: scale(1);
-      }
+    }
   }
 }
 
@@ -145,7 +145,7 @@
 .header__contacts-icon {
   display: none;
   fill: currentColor;
-  
+
   @include adaptive-for-tablet {
     display: inline;
     vertical-align: middle;
@@ -192,7 +192,7 @@
   font-size: 34px;
   line-height: 1.176;
   color: var(--accent-color);
-  
+
   @media screen and (max-width: 380px) {
     font-size: 24px;
   }
@@ -205,19 +205,19 @@
     color: currentColor;
     font-size: 12px;
     line-height: 1.167;
-    }
-  
-    &:focus,
-    &:hover {
-      outline: none;
-      color: var(--accent-color);
-    }
+  }
 
-    @include adaptive-for-desktop {
-      padding-top: 32px;
-      padding-bottom: 32px;
-      font-size: inherit;
-    }
+  &:focus,
+  &:hover {
+    outline: none;
+    color: var(--accent-color);
+  }
+
+  @include adaptive-for-desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: inherit;
+  }
 }
 
 .header__social-list {
@@ -227,7 +227,7 @@
 
   @include adaptive-for-tablet {
     display: none;
-    }
+  }
 }
 
 .header__social-item {
@@ -239,7 +239,7 @@
   }
 
   &:not(:last-child) {
-  border-right: 1px solid var(--transparent-border-color);
+    border-right: 1px solid var(--transparent-border-color);
   }
 }
 
@@ -263,12 +263,12 @@
     position: fixed;
     z-index: 1;
   }
-  
+
   & .main-menu__icon-cross {
     display: none;
   }
 
-  &.is-open .main-menu__icon-burger{
+  &.is-open .main-menu__icon-burger {
     display: none;
   }
 
@@ -284,5 +284,5 @@
 
   @include adaptive-for-tablet {
     display: none;
- }
+  }
 }
