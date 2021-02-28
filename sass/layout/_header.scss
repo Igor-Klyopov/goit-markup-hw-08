@@ -251,7 +251,7 @@
 }
 
 .main-menu__button {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   margin: 10px;
@@ -260,6 +260,7 @@
   border: none;
 
   &.is-open {
+    position: fixed;
     z-index: 1;
   }
   
