@@ -854,6 +854,7 @@ img {
     left: 0;
     display: none;
     padding: 48px 40px;
+    overflow-y: scroll;
   }
 }
 
