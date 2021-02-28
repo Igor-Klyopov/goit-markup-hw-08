@@ -1,14 +1,14 @@
 .feature__item {
 @include adaptive-before-tablet {
-  @include cardNumberInline(1);
+  @include card-number-in-line(1);
 }
 
 @include adaptive-for-tablet {
-  @include cardNumberInline(2);
+  @include card-number-in-line(2);
 }
 
 @include adaptive-for-desktop {
-  @include cardNumberInline(4);
+  @include card-number-in-line(4);
 }
 }
 
@@ -36,7 +36,7 @@
 }
 
 .competence__item {
-  @include cardNumberInline(3);
+  @include card-number-in-line(3);
 }
 
 .competence__kind {
@@ -68,15 +68,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   @include adaptive-before-tablet {
-    @include cardNumberInline(1);
+    @include card-number-in-line(1);
  }
  
   @include adaptive-for-tablet {
-    @include cardNumberInline(2);
+    @include card-number-in-line(2);
  }
  
   @include adaptive-for-desktop {
-    @include cardNumberInline(4);
+    @include card-number-in-line(4);
  }
 }
 
@@ -104,14 +104,14 @@
 .clients__item {
   height: 90px;
 
-  @include cardNumberInline(2);
+  @include card-number-in-line(2);
   
   @include adaptive-for-tablet {
-    @include cardNumberInline(3);
+    @include card-number-in-line(3);
  }
 
  @include adaptive-for-desktop {
-    @include cardNumberInline(6);
+    @include card-number-in-line(6);
  }
   
 }

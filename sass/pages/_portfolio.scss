@@ -56,15 +56,15 @@
   padding-inline-start: 0;
 
   @include adaptive-before-tablet {
-    @include cardNumberInline(1);
+    @include card-number-in-line(1);
   }
 
   @include adaptive-for-tablet {
-    @include cardNumberInline(2);
+    @include card-number-in-line(2);
   }
 
   @include adaptive-for-desktop {
-    @include cardNumberInline(3);
+    @include card-number-in-line(3);
   }
 }
 

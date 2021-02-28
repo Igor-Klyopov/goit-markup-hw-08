@@ -92,6 +92,7 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  color: var(--basic-light-text-color);
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -102,9 +103,7 @@
     margin-right: 10px;
     margin-bottom: 0;
   }
-}
 
-#footer-form-mail {
   &::placeholder {
     color: var(--transparent-text-color);
   }

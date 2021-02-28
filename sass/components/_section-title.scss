@@ -6,7 +6,7 @@
   letter-spacing: 0.03em;
   line-height: 1.167;
 
-  @mixin adaptive-for-desktop {
+  @include adaptive-for-desktop {
     margin-bottom: 50px;
  }
 }
