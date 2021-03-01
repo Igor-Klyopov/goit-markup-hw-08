@@ -51,6 +51,10 @@
   @include adaptive-for-phone {
     margin-bottom: 40vh;
   }
+
+  @include adaptive-for-tablet {
+    margin-bottom: 0;
+  }
 }
 
 .main-menu__list {

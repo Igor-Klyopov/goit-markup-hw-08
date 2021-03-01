@@ -886,6 +886,12 @@ img {
 }
 
 @media (min-width: 768px) {
+  .main-menu {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
   .main-menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
