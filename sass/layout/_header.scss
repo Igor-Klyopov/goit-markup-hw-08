@@ -46,8 +46,11 @@
   }
 }
 
+.main-menu {
+  margin-bottom: 38vh;
+}
+
 .main-menu__list {
-  margin-bottom: 302px;
   @include adaptive-for-tablet {
     display: flex;
     margin-bottom: 0;

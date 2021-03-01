@@ -875,8 +875,8 @@ img {
   }
 }
 
-.main-menu__list {
-  margin-bottom: 302px;
+.main-menu {
+  margin-bottom: 38vh;
 }
 
 @media (min-width: 768px) {
