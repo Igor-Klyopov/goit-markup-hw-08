@@ -876,7 +876,13 @@ img {
 }
 
 .main-menu {
-  margin-bottom: 38vh;
+  margin-bottom: 25vh;
+}
+
+@media screen and (min-width: 480px) {
+  .main-menu {
+    margin-bottom: 40vh;
+  }
 }
 
 @media (min-width: 768px) {

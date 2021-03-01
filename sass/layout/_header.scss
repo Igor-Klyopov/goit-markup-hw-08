@@ -47,7 +47,10 @@
 }
 
 .main-menu {
-  margin-bottom: 38vh;
+  margin-bottom: 25vh;
+  @include adaptive-for-phone {
+    margin-bottom: 40vh;
+  }
 }
 
 .main-menu__list {
