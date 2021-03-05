@@ -32,6 +32,7 @@
   }
 
   @include adaptive-for-desktop {
+    max-width: 1600px;
     height: 600px;
     background-image: var(--hero-overlay),
       url(../images/home-page/hero-bg-desktop.jpg);

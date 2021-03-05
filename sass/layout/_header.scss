@@ -15,45 +15,36 @@
 
 .menu-container {
   width: 100%;
+  display: flex;
   background-color: var(--primary-bg-color);
 
   &.is-open {
-    display: block;
-    z-index: 1;
+    top: 0;
+    justify-content: space-between;
 
     @include adaptive-for-tablet {
-      display: flex;
+      flex-direction: row;
     }
   }
 
   @include adaptive-before-tablet {
     position: fixed;
+    top: -100%;
+    left: 0px;
+    z-index: 1;
+    flex-direction: column;
     height: 100%;
-    top: 0;
-    left: 0;
-    display: none;
     padding: 48px 40px;
     overflow-y: scroll;
+    transition: top 250ms ease-in-out;
   }
 
   @include adaptive-for-tablet {
     position: static;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     height: 80px;
     padding: 0;
-  }
-}
-
-.main-menu {
-  margin-bottom: 25vh;
-  @include adaptive-for-phone {
-    margin-bottom: 40vh;
-  }
-
-  @include adaptive-for-tablet {
-    margin-bottom: 0;
   }
 }
 
@@ -123,26 +114,24 @@
 }
 
 .header__contacts-list {
-  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
   margin-bottom: 64px;
 
   @include adaptive-for-tablet {
-    position: static;
+    flex-direction: column;
     margin-bottom: 0;
   }
 
   @include adaptive-for-desktop {
-    display: flex;
+    flex-direction: row;
   }
 }
 
 .header__contacts-item {
-  position: static;
   @include adaptive-before-tablet {
     &:nth-child(2) {
-      position: absolute;
-      top: -200%;
-      left: 0;
+      margin-bottom: 32px;
     }
   }
 
@@ -200,13 +189,10 @@
 }
 
 .header__contacts-tel {
-  font-size: 34px;
   line-height: 1.176;
   color: var(--accent-color);
 
-  @media screen and (max-width: 380px) {
-    font-size: 24px;
-  }
+  font-size: responsive-font-size(24, 34, 320, 480);
 }
 
 .header__contacts-mail,
@@ -242,7 +228,7 @@
 }
 
 .header__social-item {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-right: 10px;
 
   &:not(:first-child) {
@@ -273,6 +259,8 @@
   &.is-open {
     position: fixed;
     z-index: 1;
+    animation-duration: 750ms;
+    animation-name: bounce-in;
   }
 
   & .main-menu__icon-cross {
