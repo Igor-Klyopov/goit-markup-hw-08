@@ -98,8 +98,12 @@
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
+  @include adaptive-for-tablet {
+    min-width: 450px;
+  }
+
   @include adaptive-for-desktop {
-    width: 358px;
+    min-width: 358px;
     margin-right: 10px;
     margin-bottom: 0;
   }
@@ -110,11 +114,10 @@
 }
 
 .subscribe-button {
-  @include adaptive-for-desktop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .subscribe-button svg {

@@ -1360,9 +1360,15 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
+@media (min-width: 768px) {
+  #footer-form-mail {
+    min-width: 450px;
+  }
+}
+
 @media (min-width: 1200px) {
   #footer-form-mail {
-    width: 358px;
+    min-width: 358px;
     margin-right: 10px;
     margin-bottom: 0;
   }
@@ -1384,18 +1390,17 @@ img {
   color: var(--transparent-text-color);
 }
 
-@media (min-width: 1200px) {
-  .subscribe-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.subscribe-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
 
 .subscribe-button svg {
